@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입</title>
+</head>
+<body>
+    <h2>회원가입</h2>
+    <!-- action에는 URL, GET method는 server 보낼 떄 data 노출-->
+    <form action="my-app" method = "GET">
+        <div>
+            <label for="userid">아이디 : </label>
+            <input type="text" id = "userid" name = "id" placeholder="아이디를 입력하세요.">    
+        </div>
+
+        <div>
+            <label for="userpw">비밀번호 : </label>
+            <input type="text" id = "userpw" name = "password" placeholder="비밀번호를 입력하세요.">    
+        </div>
+
+        <!-- 성별 select -->
+        <div>
+            <label for="gender">성별 : </label>
+            <select name="gender" id="gender">
+                <option value="male">남성</option>
+                <option value="female">여성</option>
+            </select>
+        </div>
+
+        <!-- 전공 select -->
+        <div>
+            <label for="major">전공 : </label>
+            <select name="major" id="major">
+                <option value="ice">정보통신공학</option>
+                <option value="ce">컴퓨터공학</option>
+                <option value="be">생명공학</option>
+            </select>
+        </div>
+
+        <!-- 자기소개 text -->
+        <div>
+            <label for="introduce">자기소개</label>
+            <textarea name="introduce" id="introduce" cols="20" rows="5" placeholder="자기소개 입력하세요"></textarea>
+        </div>
+
+        <button type = "submit">제출</button>
+        <button type = "reset">초기화</button>
+    </form> 
+</body>
+</html>
