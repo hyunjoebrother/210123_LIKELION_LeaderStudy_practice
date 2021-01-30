@@ -1,8 +1,8 @@
 ## 자료형 - 숫자형
 # 정수형(int) & 실수형(float)
 
-num1 = int(input("첫번째 정수를 입력하세여 : "))
-num2 = int(input("두번째 정수를 입력하세여 : "))
+num1 = int(input("첫번째 정수를 입력하세요 : "))
+num2 = int(input("두번째 정수를 입력하세요 : "))
 
 print(num1+num2) #덧셈
 print(num1*num2) #곱셈
